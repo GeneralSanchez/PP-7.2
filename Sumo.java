@@ -43,6 +43,11 @@ public class Sumo extends Sport
   {
     return "ahhhhhhh!";
   }
+  public String slogan()
+  {
+    return "COME AT ME YOU!";
+  }
+
   public String toString()
   {
     String output = super.toString();

@@ -5,7 +5,7 @@ public class Lightsaber extends Sport
   private int sabersamount;
   private boolean hasignated;
 
-  public Lightsaber (String name,String side,int size,boolean isfaul,double points,String quality,int sabersamount,boolean hasignated)
+  public Lightsaber (String name,int size,boolean isfaul,double points,String quality,String side,int sabersamount,boolean hasignated)
   {
     super (name,size,isfaul,points);
     this.quality = quality;
@@ -49,6 +49,7 @@ public class Lightsaber extends Sport
   {
     this.hasignated = hasignated;
   }
+
   //overriden method
   public String message()
   {
@@ -58,6 +59,11 @@ public class Lightsaber extends Sport
   {
     return "bbvvvvvvvvvvvvvnnnnnn";
   }
+  public String slogan()
+  {
+    return "MAY THE FORCE BE WITH YOU ALWAYS!";
+  }
+  
   public String toString()
   {
     String output = super.toString();

@@ -51,16 +51,17 @@ public abstract class Sport
   //brain methods
   public String message()
   {
-    return name + "is an ok sport for fitness,well not for Andy lol";
+    return name + " is an ok sport for fitness,well not for Andy lol";
   }
   public abstract String sound();
+  public abstract String slogan();
   
   public String toString()
   {
-    return "Sport Name:"+name+
+    return "Team Name: "+name+
             "\nTeam Size: "+ size+
-            "\nA Faul:"+isfaul+
-            "\nHow many points"+points;
+            "\nA Faul: "+isfaul+
+            "\nHow many points: "+points;
   }
 
 }

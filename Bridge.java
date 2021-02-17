@@ -4,9 +4,9 @@ public class Bridge extends Sport
   private boolean trick;
   private int memory;
 
-  public Lightsaber (String name,String side,int size,boolean isfaul,double points,String role,boolean trick,int memory)
+  public Bridge (String name,int size,boolean isfaul,double points,String role,boolean trick,int memory)
   {
-    super (name,size,isfaul,points);
+    super(name,size,isfaul,points);
     this.role = role;
     this.trick = trick;
     this.memory = memory;
@@ -21,7 +21,7 @@ public class Bridge extends Sport
     this.role = role;
   }
   //getter and setter for trick
-  public String GetTrick()
+  public boolean GetTrick()
   {
     return trick;
   }
@@ -30,7 +30,7 @@ public class Bridge extends Sport
     this.trick = trick;
   }
   //getter and setter for role
-  public String GetMemory()
+  public int GetMemory()
   {
     return memory;
   }
@@ -38,12 +38,22 @@ public class Bridge extends Sport
   {
     this.memory = memory;
   }
+ 
+  public String sound()
+  {
+    return "Think Think Think";
+  }
+  public String slogan()
+  {
+    return "The card win!";
+  }
+  
   public String toString()
   {
     String output = super.toString();
     output += "\nYour role is: " + role +
-              "\nTricks made: " + trick +
-              "\nYo rememebered: " + memory;
+              "\nTricks: " + trick +
+              "\nYou rememebered: " + memory;
     return output;
   }
 
